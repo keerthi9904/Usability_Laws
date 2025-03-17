@@ -33,11 +33,6 @@ export default function Header() {
         <FaSearch className='search-icon' />
       </div>
       <div className="cart-container" onClick={handleShowCart}>
-          {/* <svg className="cart-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"> */}
-            {/* <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.5 13h11l2-7H6"></path>
-          </svg> */}
           <FaShoppingCart className='cart-icon' />
           <span className="cart-text">Cart ({totalCartItems})</span>
         </div>

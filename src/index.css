@@ -20,7 +20,7 @@ body {
   background: #645353;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 10%;
+  padding: 1.5rem 8%;
 }
 .mainpage-logo{
 cursor: pointer;
@@ -32,8 +32,8 @@ cursor: pointer;
 }
 
 #main-header #title img {
-  width: 4rem;
-  height: 4rem;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
   border-radius: 50%;
   border: 2px solid #ffc404;
@@ -57,12 +57,12 @@ h1 {
 #meals {
   width: 90%;
   max-width: 90rem;
-  /* max-height: 90rem; */
   list-style: none;
   margin: 2rem auto;
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 20rem));
   gap: 1rem;
 }
 
@@ -102,7 +102,6 @@ h1 {
 
 .meal-item-price {
   display: inline-block;
-  /* background-color: #312c1d; */
   background-color: #0d1614;
   color: #ffc404;
   font-size: 0.9rem;
@@ -435,6 +434,7 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     flex-grow: 1;
+    color: #ffc404;
   }
   .category-header {
     display: flex;
@@ -452,7 +452,7 @@ h1 {
     align-items: center;
     justify-content: center;
     color: black; /* Arrow color */
-    margin-left: 60px; /* Adjust for positioning */
+    margin-left: 68px; /* Adjust for positioning */
     width: 40px; /* Circle width */
     height: 40px; /* Circle height */
     border-radius: 50%; /* Makes it circular */
