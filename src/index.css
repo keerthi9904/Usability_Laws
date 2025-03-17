@@ -345,13 +345,6 @@ h1 {
   background: #e07b00;
 }
 
-.category-title {
-  text-align: center;
-  margin: 20px 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
 /* Cart Icon change in Header of Main page */
 .nav-container {
   display: flex;
@@ -434,3 +427,41 @@ h1 {
   cursor: pointer;
   /* color :#d9e2f1 */
   }
+
+  /* CategoryMeals.jsx styling */
+  .category-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between button and heading */
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+  .back-button {
+    background: none; /* Transparent background */
+    border: 2px solid black; /* Black outline */
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Arrow color */
+    margin-left: 60px; /* Adjust for positioning */
+    width: 40px; /* Circle width */
+    height: 40px; /* Circle height */
+    border-radius: 50%; /* Makes it circular */
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background: rgb(0, 0, 0); /* Background fills on hover */
+    color: white; /* Arrow turns white on hover */
+  }
+  
+  
