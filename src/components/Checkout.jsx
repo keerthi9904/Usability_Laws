@@ -431,12 +431,12 @@ export default function Checkout() {
           {step === 2 && (
             <div className="step2">
               <h2>Shipping Details</h2>
-              <Input label="Full Name" type="text" id="name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
-              <Input label="E-Mail Address" type="email" id="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
-              <Input label="Street" type="text" id="street" value={formData.street} onChange={(e) => setFormData({ ...formData, street: e.target.value })} />
-              <Input label="Postal Code" type="text" id="postalCode" value={formData.postalCode} onChange={(e) => setFormData({ ...formData, postalCode: e.target.value })} />
-              <Input label="City" type="text" id="city" value={formData.city} onChange={(e) => setFormData({ ...formData, city: e.target.value })} />
-              <Button onClick={() => setStep(1)}>Back</Button>
+              <Input label={<span>Full Name <span style={{ color: 'red' }}>*</span></span>} type="text" id="name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
+              <Input label={<span>E-Mail Address <span style={{ color: 'red' }}>*</span></span>} type="email" id="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+              <Input label={<span>Street <span style={{ color: 'red' }}>*</span></span>} type="text" id="street" value={formData.street} onChange={(e) => setFormData({ ...formData, street: e.target.value })} />
+              <Input label={<span>Postal Code <span style={{ color: 'red' }}>*</span></span>} type="text" id="postalCode" value={formData.postalCode} onChange={(e) => setFormData({ ...formData, postalCode: e.target.value })} />
+              <Input label={<span>City <span style={{ color: 'red' }}>*</span></span>} type="text" id="city" value={formData.city} onChange={(e) => setFormData({ ...formData, city: e.target.value })} />
+              <Button onClick={() => setStep(1)} style={{ marginRight: '350px' }}>Back</Button>
               <Button onClick={() => setStep(3)}>Next</Button>
             </div>
           )}
@@ -446,7 +446,7 @@ export default function Checkout() {
             <div className="step3">
               <h2>Payment</h2>
               <p>Payment details will be added here (e.g., card entry).</p>
-              <Button onClick={() => setStep(2)}>Back</Button>
+              <Button onClick={() => setStep(2)} style={{ marginRight: '350px' }}>Back</Button>
               <Button onClick={() => setStep(4)}>Next</Button>
             </div>
           )}
@@ -456,7 +456,7 @@ export default function Checkout() {
             <div className="step4">
               <h2>Confirm Order</h2>
               <p>Please review your order before submitting.</p>
-              <Button onClick={() => setStep(3)}>Back</Button>
+              <Button onClick={() => setStep(3)} style={{ marginRight: '310px' }}>Back</Button>
               <Button onClick={handleSubmit}>Submit Order</Button>
             </div>
           )}
