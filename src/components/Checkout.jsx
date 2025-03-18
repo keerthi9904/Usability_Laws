@@ -423,6 +423,11 @@ export default function Checkout() {
                 ))}
               </ul>
               <p>Total: {currencyFormatter.format(cartTotal)}</p>
+              <Button onClick={() => {
+                userProgressCtx.hideCheckout(); // Hide the checkout modal
+                }} style={{ marginRight: '310px' }}>
+                Back to Menu
+              </Button>
               <Button onClick={() => setStep(2)}>Next</Button>
             </div>
           )}
