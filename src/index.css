@@ -465,3 +465,35 @@ h1 {
   }
   
   
+
+  /* for added 4 step checkout proecss */
+
+  .checkout-container {
+    padding: 20px;
+  }
+  
+  .checkout-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid lightgray;
+    color: gray;
+  }
+  
+  .step.active {
+    border-bottom: 3px solid #007bff;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .checkout-container div {
+    margin-bottom: 15px;
+  }
+  
